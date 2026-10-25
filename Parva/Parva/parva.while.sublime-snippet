@@ -1,6 +1,6 @@
 <snippet>
 	<content><![CDATA[
-while(${1:conditonal}) {
+while(${1:conditional}) {
 	${2:/* code */}
 }
 ]]></content>

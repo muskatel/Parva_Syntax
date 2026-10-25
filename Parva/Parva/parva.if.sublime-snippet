@@ -1,6 +1,6 @@
 <snippet>
 	<content><![CDATA[
-if(${1:conditonal}) {
+if(${1:conditional}) {
 	${2:/* code */}
 }
 ]]></content>

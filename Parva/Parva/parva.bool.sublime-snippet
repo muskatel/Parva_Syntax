@@ -1,6 +1,6 @@
 <snippet>
 	<content><![CDATA[
-bool ${1:Function}(${2:Paramaters}) {
+bool ${1:Function}(${2:Parameters}) {
 	${3:/* code */}
 	return false;
 }
