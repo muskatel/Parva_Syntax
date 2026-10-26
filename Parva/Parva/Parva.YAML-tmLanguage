@@ -15,7 +15,7 @@ patterns:
 
 - comment: Numbers
   name: constant.numeric.pav
-  match: (\d+)?(\.)?(\d+)
+  match: (?<![A-Za-z0-9_])\d+
 
 - comment: Keyword if
   name: constant.numeric.pav
