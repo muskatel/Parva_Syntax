@@ -2,6 +2,6 @@
 	<content><![CDATA[
 write(${1:"Output"});
 ]]></content>
-	<tabTrigger>write</tabTrigger> -->
-	<scope>source.pav</scope> -->
+	<tabTrigger>write</tabTrigger>
+	<scope>source.pav</scope>
 </snippet>

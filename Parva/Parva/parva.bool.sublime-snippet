@@ -5,6 +5,6 @@ bool ${1:Function}(${2:Parameters}) {
 	return false;
 }
 ]]></content>
-	<tabTrigger>bool</tabTrigger> -->
-	<scope>source.pav</scope> -->
+	<tabTrigger>bool</tabTrigger>
+	<scope>source.pav</scope>
 </snippet>
