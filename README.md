@@ -8,7 +8,9 @@ Now supports PVM files too!
 Ctrl-Alt-L will recalculate line numbers within .pvm files.
 
 #### Language specifications: 
-[Parva Language](http://www.cs.ru.ac.za/courses/CSc301/Translators/parva.htm)
+- [The programming language Parva, level 1](https://www.cs.ru.ac.za/compilerbook/CSharpAndJava/book2005/book2005text/parva1.htm)
+- [The programming language Parva, level 2](https://www.cs.ru.ac.za/compilerbook/CSharpAndJava/book2005/book2005text/parva2.htm)
+- [PVM instruction set, appendix A](https://www.cs.ru.ac.za/compilerbook/CSharpAndJava/book2005/book2005text/appa.htm)
 
 #### Snippets:
 - Main()
