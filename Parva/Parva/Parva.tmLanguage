@@ -32,7 +32,7 @@
 			<key>comment</key>
 			<string>Numbers</string>
 			<key>match</key>
-			<string>(\d+)?(\.)?(\d+)</string>
+			<string>(?&lt;![A-Za-z0-9_])\d+</string>
 			<key>name</key>
 			<string>constant.numeric.pav</string>
 		</dict>
