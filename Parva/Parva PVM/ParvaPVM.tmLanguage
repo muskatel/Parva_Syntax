@@ -30,7 +30,7 @@
 			<key>comment</key>
 			<string>Keywords</string>
 			<key>match</key>
-			<string>((\d+[ \t]*))((\b)(LDC(_[0-9])?|LDA(_[0-9])?|LDV|LDXA|STO|PRNI|PRNB|PRNS|PRNL|INPI|INPB|ADD|SUB|MUL|DIV|REM|CEQ|CNE|CGT|CLT|CLE|CGE|NEG|AND|OR|NOT|DSP|ANEW|HALT|BRN|BZE|NOP|LDL(_[0-9])?|STL(_[0-9])?|ISLET|LOW|INC|DEC|BGT|BLT|JR|BNE|BEQ|INPC|PRNC)(\b))</string>
+			<string>((\d+[ \t]*))((\b)(LDC(_(M1|[0-9]))?|LDA(_[0-9])?|LDL(_[0-9])?|STL(_[0-9])?|ISLET|ALEN|ANEW|CALL|FHDR|HALT|LDGA|LDXA|PRNB|PRNC|PRNI|PRNL|PRNS|RETV|TRAP|INPB|INPC|INPI|ADD|AND|BEQ|BGE|BGT|BLE|BLT|BNE|BNZ|BRN|BZE|CEQ|CGE|CGT|CLE|CLT|CNE|DEC|DIV|DSP|DUP|INC|LDE|LDG|LDV|LOW|MUL|NEG|NOP|NOT|POP|REM|RET|SEL|STE|STG|STO|SUB|SWI|JR|OR)(\b))</string>
 			<key>name</key>
 			<string>markup.pvm</string>
 		</dict>

@@ -6,8 +6,8 @@ import sublime, sublime_plugin
 class UpdatePvmLineNumbersCommand(sublime_plugin.TextCommand):
     def run(self, edit):
         self.view.run_command('expand_tabs')
-        singlekeywords = '(LDC_[0-9]+|LDA_[0-9]+|LDL_[0-9]+|STL_[0-9]+|LDV|LDXA|STO|PRNI|PRNB|PRNL|INPI|INPB|ADD|SUB|MUL|DIV|REM|CEQ|CNE|CGT|CLT|CLE|CGE|NEG|AND|OR|NOT|ANEW|NOP|ISLET|LOW|INC|DEC)'
-        doublekeywords = '(LDC|LDA|PRNS|DSP|BRN|BZE|NOP|LDL|STL|BGT|BLT|JR|BNE|BEQ|INPC|PRNC)'
+        singlekeywords = '(LDC_M1|LDC_[0-9]+|LDA_[0-9]+|LDL_[0-9]+|STL_[0-9]+|ISLET|ALEN|ANEW|FHDR|LDXA|PRNB|PRNC|PRNI|PRNL|RETV|TRAP|INPB|INPC|INPI|ADD|AND|CEQ|CGE|CGT|CLE|CLT|CNE|DEC|DIV|DUP|INC|LDE|LDV|LOW|MUL|NEG|NOP|NOT|POP|REM|RET|STE|STO|SUB|OR)'
+        doublekeywords = '(LDGA|CALL|PRNS|BEQ|BGE|BGT|BLE|BLT|BNE|BNZ|BRN|BZE|DSP|LDA|LDC|LDG|LDL|STG|STL|JR)'
 
         leading = re.compile('^[ \t]*[0-9]+[ \t]*')
         blank = re.compile('[ \t]*\n?') 
