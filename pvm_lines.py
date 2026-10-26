@@ -1,5 +1,4 @@
 import re
-import sys
 import sublime, sublime_plugin
 
 # Extends TextCommand so that run() receives a View to modify.
@@ -18,7 +17,6 @@ class UpdatePvmLineNumbersCommand(sublime_plugin.TextCommand):
         squote = re.compile('[ \t]*[0-9]+[ \t]*(' + doublekeywords + '[ \t]+\'.*\')+([ \t]*;(.|[0-9])*)?[ \t]*\n')
         dquote = re.compile('[ \t]*[0-9]+[ \t]*(' + doublekeywords + '[ \t]+\".*\")+([ \t]*;(.|[0-9])*)?[ \t]*\n')
 
-        fileLine = 1
         lineNum = 0
         prevLineNum =0
         output = ""
@@ -26,7 +24,7 @@ class UpdatePvmLineNumbersCommand(sublime_plugin.TextCommand):
 
         doc = sublime.Region(0, self.view.size())
         
-        for region in self.view.split_by_newlines(doc):
+        for fileLine, region in enumerate(self.view.split_by_newlines(doc), start=1):
 
 
             if not region.empty():
@@ -64,7 +62,6 @@ class UpdatePvmLineNumbersCommand(sublime_plugin.TextCommand):
                     output += str(prevLineNum).rjust(4) + "   " + re.sub(leading,"",line,1)
 
                 prevLineNum = lineNum
-                fileLine += 1
         #print(output)
         if(Error):
             print("Line numbers not changed due to error(s)!")
