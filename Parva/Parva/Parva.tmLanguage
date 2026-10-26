@@ -38,17 +38,25 @@
 		</dict>
 		<dict>
 			<key>comment</key>
-			<string>Keyword if</string>
+			<string>Boolean and null constants</string>
 			<key>match</key>
 			<string>(\b)(true|false|null)(\b)</string>
 			<key>name</key>
-			<string>constant.numeric.pav</string>
+			<string>constant.language.pav</string>
 		</dict>
 		<dict>
 			<key>comment</key>
 			<string>Keywords</string>
 			<key>match</key>
-			<string>(\b)(if|while|for|else|do|goto|break|continue|const|return|halt|switch|case)(\b)</string>
+			<string>(\b)(if|while|const|return|halt|new)(\b)</string>
+			<key>name</key>
+			<string>keyword.pav</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>Words Parva reserves for later extensions</string>
+			<key>match</key>
+			<string>(\b)(break|case|char|continue|default|do|else|for|goto|switch)(\b)</string>
 			<key>name</key>
 			<string>keyword.pav</string>
 		</dict>
@@ -93,7 +101,7 @@
 			<key>comment</key>
 			<string>Storage types</string>
 			<key>match</key>
-			<string>(\b)(int|bool|const|void)(\b)</string>
+			<string>(\b)(int|bool|void)(\b)</string>
 			<key>name</key>
 			<string>markup.pav</string>
 		</dict>
