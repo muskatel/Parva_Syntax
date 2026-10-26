@@ -17,13 +17,17 @@ patterns:
   name: constant.numeric.pav
   match: (\d+)?(\.)?(\d+)
 
-- comment: Keyword if
-  name: constant.numeric.pav
+- comment: Boolean and null constants
+  name: constant.language.pav
   match: (\b)(true|false|null)(\b)
 
 - comment: Keywords
   name: keyword.pav
-  match: (\b)(if|while|for|else|do|goto|break|continue|const|return|halt|switch|case)(\b)
+  match: (\b)(if|while|const|return|halt|new)(\b)
+
+- comment: Words Parva reserves for later extensions
+  name: keyword.pav
+  match: (\b)(break|case|char|continue|default|do|else|for|goto|switch)(\b)
 
 - comment: Support functions
   name: support.function.pav
@@ -38,7 +42,7 @@ patterns:
 
 - comment: Storage types
   name: markup.pav
-  match: (\b)(int|bool|const|void)(\b)
+  match: (\b)(int|bool|void)(\b)
   captures:
     '2':  {name: storage.type.pav}
        
