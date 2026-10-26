@@ -2,6 +2,6 @@
 	<content><![CDATA[
 read("${1:Prompt:}", ${2:value});
 ]]></content>
-	<tabTrigger>read</tabTrigger> -->
-	<scope>source.pav</scope> -->
+	<tabTrigger>read</tabTrigger>
+	<scope>source.pav</scope>
 </snippet>

@@ -2,6 +2,6 @@
 	<content><![CDATA[
 /* ${1:comment} */
 ]]></content>
-	<tabTrigger>/*</tabTrigger> -->
-	<scope>source.pav</scope> -->
+	<tabTrigger>/*</tabTrigger>
+	<scope>source.pav</scope>
 </snippet>

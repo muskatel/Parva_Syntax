@@ -4,6 +4,6 @@ void ${1:Function}(${2:Paramaters}) {
 	${3:/* code */}
 }
 ]]></content>
-	<tabTrigger>void</tabTrigger> -->
-	<scope>source.pav</scope> -->
+	<tabTrigger>void</tabTrigger>
+	<scope>source.pav</scope>
 </snippet>
