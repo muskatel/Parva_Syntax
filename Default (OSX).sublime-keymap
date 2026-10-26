@@ -1,0 +1,9 @@
+[
+	{
+		"keys": ["f8"],
+		"command": "update_pvm_line_numbers",
+		"context": [
+			{ "key": "selector", "operator": "equal", "operand": "source.pvm" }
+		]
+	}
+]
