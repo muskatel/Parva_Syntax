@@ -10,7 +10,7 @@ class UpdatePvmLineNumbersCommand(sublime_plugin.TextCommand):
         doublekeywords = '(LDC|LDA|PRNS|DSP|BRN|BZE|NOP|LDL|STL|BGT|BLT|JR|BNE|BEQ|INPC|PRNC)'
 
         leading = re.compile('^[ \t]*[0-9]+[ \t]*')
-        blank = re.compile('[ \t]*\n?') 
+        blank = re.compile('[ \t]*\n?$')
         comment = re.compile('([ \t]*)(;(.|[0-9])*)+[ \t]*\n')
         halt = re.compile('[ \t]*[0-9]+[ \t]*(HALT)([ \t]*;.+)?[ \t]*\n?')
         singleC = re.compile('[ \t]*-?[0-9]+[ \t]*(' + singlekeywords + ')([ \t]*;(.|[0-9])+)?[ \t]*\n')
