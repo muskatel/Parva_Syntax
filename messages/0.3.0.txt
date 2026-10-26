@@ -1,0 +1,66 @@
+Parva Syntax 0.3.0
+==================
+
+Two of these fixes stop the line numbering command losing your work, so this
+release is worth taking.
+
+
+Data loss in "PVM: Update Line Numbers"
+
+  The command deleted every line it did not recognise and reported success. It
+  now leaves the buffer alone and prints the line it could not read.
+
+  It also did not know 19 of the PVM opcodes, among them FHDR, CALL, POP, RET,
+  RETV, LDG, LDGA, STG and TRAP. Any listing from a level 2 compiler contains
+  some of those, so ordinary output lost lines. All of them are now recognised.
+
+  INPC and PRNC were counted as taking an operand. They take none, so they
+  occupy one word, not two. Addresses after them were one too high.
+
+  SEL and SWI have variable length operands and are deliberately not counted.
+  A listing containing either now reports an error rather than returning
+  addresses that are wrong.
+
+  Error messages gave the wrong line number when the file contained blank
+  lines.
+
+
+F8 is bound to PVM files only
+
+  The binding had no context, so it fired in every file, including files that
+  have nothing to do with the PVM. It is now limited to the Parva PVM syntax.
+  Keymaps for macOS and Linux have been added.
+
+  The README said Ctrl-Alt-L. The key is F8, and the README now says so.
+
+
+Highlighting
+
+  A digit inside a name is no longer coloured as a number. In "int x1 = 5;"
+  only the 5 is a number.
+
+  The keyword list now matches the language report. "new" was missing and is
+  now highlighted. The words Parva reserves for later extensions, among them
+  for, else and do, are kept in a rule of their own, since adding them to the
+  language is the usual exercise.
+
+  true, false and null were scoped constant.numeric. They are now
+  constant.language, which is the conventional scope. If your colour scheme
+  styles the two differently, those three words will change colour.
+
+
+Snippets
+
+  conditonal, Paramaters and Ouput are corrected to conditional, Parameters
+  and Output. Thanks to Jah-yee for the fix.
+
+  Eight snippets carried a stray "-->" left from an earlier edit. Removed.
+
+
+Other
+
+  The generated ParvaPVM.tmLanguage.cache is no longer tracked, so a stale
+  cache cannot hide a syntax change.
+
+  The language specification link in the README was dead. It now points at
+  Terry's 2005 book, which is still served.

@@ -1,0 +1,20 @@
+Parva Syntax
+============
+
+Syntax highlighting, snippets and a build system for the Parva language, and
+syntax highlighting for PVM assembler listings.
+
+Parva is the teaching language from Pat Terry's compiler course at Rhodes
+University. It remains his intellectual property.
+
+Files ending .pav use the Parva syntax. Files ending .pvm use the Parva PVM
+syntax.
+
+Press F8 in a .pvm file to recalculate the addresses in the listing. The same
+command is on the palette as "PVM: Update Line Numbers". It reports an error
+and changes nothing if it meets a line it does not recognise.
+
+Language reference:
+  https://www.cs.ru.ac.za/compilerbook/CSharpAndJava/book2005/book2005text/parva1.htm
+  https://www.cs.ru.ac.za/compilerbook/CSharpAndJava/book2005/book2005text/parva2.htm
+  https://www.cs.ru.ac.za/compilerbook/CSharpAndJava/book2005/book2005text/appa.htm
